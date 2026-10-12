@@ -1,126 +1,261 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html, body {
- height: 100%
+
+html,
+body {
+    min-height: 100%;
 }
-h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+header {
+    padding: 15px;
+    background: #333;
+    color: #fff;
+}
+
+header h1 {
+    margin-bottom: 10px;
 }
 
 nav {
-  height: 50px;
-  background-color: #fbf9f9;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    min-height: 50px;
+    background-color: #fbf9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 20px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000;
 }
 
-main{
-    /* background-color: grey; */
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: inherit;
+}
+
+main {
     width: 100%;
-    height: 100%;    
+    min-height: calc(100vh - 140px);
 }
 
-.discountblock{
+.page {
+    width: min(100%, 960px);
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6;
+}
+
+.page h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.homepage {
+    width: 100%;
+    min-height: calc(100vh - 140px);
+    padding: 48px 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: teal;
+    background-image: url("../images/homeHero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homeInfoblock {
+    width: min(100%, 520px);
+    padding-top: 40px;
+    color: #d5e7e7;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.homeInfoblock h2 {
+    margin-bottom: 8px;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    text-transform: uppercase;
+}
+
+.homeInfoblock p {
+    font-size: 1.1rem;
+}
+
+.about-page {
+    margin-top: 24px;
+    background: #f4f7f7;
+}
+
+.discountblock {
+    min-height: 70px;
+    padding: 8px 16px;
     background-color: #d5e7e7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 70px;
+    justify-content: center;
+    text-align: center;
 }
 
-.discountblock h1{
-    font-family: Cambria;
+.discountblock h1 {
+    margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
 }
-.discountblock p{
-    font-family: Cambria;
+
+.discountblock p {
+    margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 10px;
 }
 
+.contactHeroblock {
+    min-height: 200px;
+    padding: 24px;
+    background-color: #d5e7e7;
+    background-image: url("../images/contactHero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #322929;
+    text-align: center;
+}
+
+.contactHeroblock p,
+.contactHeroblock h1 {
+    margin-bottom: 8px;
+}
+
+.contactHeroblock h1 {
+    font-size: 40px;
+}
+
+.contactInfoblock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-top: 50px;
+    padding: 0 24px;
+}
+
+.info {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.info h1 {
+    font-size: 1.25rem;
+}
+
+.contactMessageblock {
+    margin: 100px 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.contactMessageblock p:first-child {
+    font-weight: bold;
+}
+
+.contactMessageblock p:last-child {
+    font-size: 15px;
+}
+
 @media screen and (max-width: 420px) {
-    .discountblock h1{
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .homepage {
+        min-height: calc(100vh - 120px);
+        padding: 32px 24px;
+    }
+
+    .homeInfoblock {
+        padding-top: 24px;
+    }
+
+    .discountblock h1 {
         font-size: 20px;
     }
-    .discountblock p{
-        font-size: 5px;
+
+    .discountblock p {
+        font-size: 10px;
     }
-}
 
-.contactHeroblock{
-    background-image: url(../images/contactHero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
+    .contactHeroblock h1 {
+        font-size: 32px;
+    }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #322929
-}
+    .contactInfoblock {
+        margin-top: 32px;
+    }
 
-.contactHeroblock h1{
-    font-size: 40px;
-    /* color: #322929; */
-}
-
-.contactInfoblock{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-.contactMessageblock{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    font-size: 30px;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.homepage{
-    background-image: url(../images/homeHero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-evenly;
-    
-
-}
-.homeInfoblock{
-    padding-top: 100px;
-    padding-left: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 200px;
-    height: 200px;
-    color: #d5e7e7;
-    font-size: 70px;
+    .contactMessageblock {
+        margin-top: 48px;
+        font-size: 24px;
+    }
 }
