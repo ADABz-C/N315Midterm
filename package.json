@@ -1,0 +1,21 @@
+{
+  "name": "n315midterm",
+  "version": "1.0.0",
+  "description": "Midterm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADABz-C/N315Midterm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ADABz-C/N315Midterm/issues"
+  },
+  "homepage": "https://github.com/ADABz-C/N315Midterm#readme"
+}
