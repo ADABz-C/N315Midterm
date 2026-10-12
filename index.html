@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="UTF-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>MobileNavDemo</title>
- <link rel="stylesheet" href="css/styles.css">
- </head>
- <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Responsive Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Team MVC Website</h1>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+
         <nav>
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#services">SERVICES</a>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="services">Services</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-<script type="module" src="src/app.js"></script>
+    <main id="content"></main>
+
+    <script type="module" src="src/app.js"></script>
 </body>
+
 </html>
