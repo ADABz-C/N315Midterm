@@ -109,10 +109,18 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    
 
 }
 .homeInfoblock{
+    padding-top: 100px;
+    padding-left: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 50%;
+    width: 200px;
     height: 200px;
+    color: #d5e7e7;
+    font-size: 70px;
 }
