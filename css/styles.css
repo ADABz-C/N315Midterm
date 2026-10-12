@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
   height: 50px;
-  background-color: #000;
+  background-color: #fbf9f9;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -20,5 +20,107 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
+}
+
+main{
+    /* background-color: grey; */
+    width: 100%;
+    height: 100%;    
+}
+
+.discountblock{
+    background-color: #d5e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+.discountblock h1{
+    font-family: Cambria;
+    font-size: 30px;
+}
+.discountblock p{
+    font-family: Cambria;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .discountblock h1{
+        font-size: 20px;
+    }
+    .discountblock p{
+        font-size: 5px;
+    }
+}
+
+.contactHeroblock{
+    background-image: url(../images/contactHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #322929
+}
+
+.contactHeroblock h1{
+    font-size: 40px;
+    /* color: #322929; */
+}
+
+.contactInfoblock{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.contactMessageblock{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    font-size: 30px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.homepage{
+    background-image: url(../images/homeHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+.homeInfoblock{
+    padding-top: 100px;
+    padding-left: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 200px;
+    height: 200px;
+    color: #d5e7e7;
+    font-size: 70px;
 }
