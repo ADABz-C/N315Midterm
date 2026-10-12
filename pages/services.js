@@ -1,1 +1,10 @@
-export default `<h1>Our Services</h1><p>Here are the services we offer.</p>`
+export const servicesContent = `
+    <section class="page">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Responsive web design</li>
+            <li>Front-end development</li>
+            <li>User experience improvements</li>
+        </ul>
+    </section>
+`;
