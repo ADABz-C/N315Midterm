@@ -14,3 +14,5 @@ Open `index.html` through a local web server, such as VS Code Live Server.
 ## Link
 
 https://github.com/ADABz-C/N315Midterm
+
+https://in-info-web4.luddy.indianapolis.iu.edu/~rwguenth/N315Midterm-main/
